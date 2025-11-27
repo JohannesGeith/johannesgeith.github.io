@@ -1,0 +1,216 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #0f172a; /* dark slate */
+  color: #e5e7eb;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 1.5rem 0;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.nav {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  opacity: 0.8;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid transparent;
+  transition: background 0.2s, border-color 0.2s, opacity 0.2s, transform 0.1s;
+}
+
+.nav a:hover {
+  opacity: 1;
+  background: rgba(148, 163, 184, 0.1);
+  border-color: rgba(148, 163, 184, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  max-width: 38rem;
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: white;
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.3);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+  opacity: 0.95;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: radial-gradient(circle at top left, #1e293b, #020617);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: #9ca3af;
+}
+
+/* Projects grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.card a {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #a5b4fc;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+.contact-list {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.contact-list li + li {
+  margin-top: 0.25rem;
+}
+
+.contact-list a {
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 2rem;
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+  .site-header {
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+}
