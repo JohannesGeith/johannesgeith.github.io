@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Hi, I'm Your Name</h1>
+      <p class="site-subtitle">Developer • Learner • Builder</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h2>Welcome to my GitHub page 👋</h2>
+          <p>
+            I like building things with code. This is a simple website hosted with
+            <strong>GitHub Pages</strong>. Check out some of my projects below or reach out if you’d like to connect.
+          </p>
+          <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank">
+            View my GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Write a short intro about yourself here. What do you work on? What are you learning?
+          What are you interested in?
+        </p>
+        <p>
+          Example: “I’m a self-taught developer learning web development and building small
+          projects in JavaScript, Python, and Rust.”
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>A short description of what this project does and what you used to build it.</p>
+            <a href="https://github.com/YOUR-USERNAME/REPO-NAME" target="_blank">View on GitHub →</a>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Another small description. Keep it short and clear.</p>
+            <a href="https://github.com/YOUR-USERNAME/ANOTHER-REPO" target="_blank">View on GitHub →</a>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Optional third project, or link to something you’re proud of.</p>
+            <a href="https://YOUR-DEPLOYED-APP-URL" target="_blank">Live Demo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you’d like to say hi, feel free to reach out:</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/YOUR-USERNAME" target="_blank">@YOUR-USERNAME</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">Your Name</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. Built with ❤️ and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
