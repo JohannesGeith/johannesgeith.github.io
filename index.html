@@ -1,161 +1,77 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Academic Website</title>
-  <meta name="description" content="Your Name — research, publications, teaching, and contact." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic website of Your Name">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="title">
-        <h1>Your Name</h1>
-        <p class="subtitle">PhD Student / Researcher · Department · University</p>
-      </div>
 
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-        <a href="assets/cv.pdf">CV</a>
-      </nav>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="site-title">
+      <h1>Your Name</h1>
+      <p>PhD Candidate</p>
     </div>
-  </header>
+    <nav class="nav">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="assets/cv.pdf">CV</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container grid">
-        <div class="card">
-          <h2>About</h2>
-          <p>
-            I am a <strong>your role</strong> at <strong>your university</strong>.
-            My research focuses on <strong>topic A</strong>, <strong>topic B</strong>, and <strong>topic C</strong>.
-          </p>
-          <p>
-            Recent interests: <em>method X</em>, <em>application Y</em>, <em>theory Z</em>.
-          </p>
-          <div class="links">
-            <a href="https://scholar.google.com/">Google Scholar</a>
-            <a href="https://orcid.org/">ORCID</a>
-            <a href="https://github.com/">GitHub</a>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-          </div>
-        </div>
+<main class="container main-grid">
+  <div class="photo">
+    <img src="assets/profile.jpg" alt="Portrait of Your Name">
+  </div>
 
-        <aside class="card profile">
-          <img src="assets/profile.jpg" alt="Portrait of Your Name" />
-          <ul class="meta">
-            <li><strong>Affiliation:</strong> University / Lab</li>
-            <li><strong>Location:</strong> City, Country</li>
-            <li><strong>Email:</strong> <a href="mailto:you@university.edu">you@university.edu</a></li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+  <div class="content">
+    <p class="welcome">Welcome!</p>
 
-    <section id="research" class="section alt">
-      <div class="container">
-        <h2>Research</h2>
+    <p>
+      I am a PhD candidate in <strong>Your Field</strong> at
+      <strong>Your University</strong>. My research examines how
+      political elites, institutions, and communication shape public
+      attitudes and democratic support.
+    </p>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Project / Theme 1</h3>
-            <p>One or two sentences describing what you do and why it matters.</p>
-            <ul>
-              <li>Key result / method</li>
-              <li>Dataset / system / approach</li>
-              <li>Collaboration / funding (optional)</li>
-            </ul>
-          </article>
+    <p>
+      My work sits at the intersection of political behavior,
+      communication, and gender. I am particularly interested in elite
+      rhetoric, selective liberalism, and democratic backsliding.
+    </p>
 
-          <article class="card">
-            <h3>Project / Theme 2</h3>
-            <p>Short description. Add links if you have code, data, or a demo.</p>
-            <p><a href="#">Project page</a> · <a href="#">Code</a></p>
-          </article>
+    <p>
+      Methodologically, I combine experimental research with
+      computational text analysis and causal inference.
+    </p>
 
-          <article class="card">
-            <h3>Project / Theme 3</h3>
-            <p>Short description.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <p>
+      I have been a visiting researcher at <em>Institution</em> and am
+      affiliated with <em>Research Center / Lab</em>.
+    </p>
 
-    <section id="publications" class="section">
-      <div class="container">
-        <h2>Publications</h2>
+    <p>
+      You are very welcome to reach out if you are interested in my work
+      or would like to collaborate.
+    </p>
+  </div>
+</main>
 
-        <ol class="pubs">
-          <li class="pub card">
-            <div class="pub-title">Paper Title (Year)</div>
-            <div class="pub-authors"><strong>Your Name</strong>, Coauthor A, Coauthor B</div>
-            <div class="pub-venue">Conference/Journal</div>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-              <a href="#">DOI</a>
-              <a href="#">Code</a>
-              <a href="#">BibTeX</a>
-            </div>
-          </li>
+<footer class="footer" id="contact">
+  <div class="container">
+    <p>
+      Email:
+      <a href="mailto:you@university.edu">you@university.edu</a>
+    </p>
+  </div>
+</footer>
 
-          <li class="pub card">
-            <div class="pub-title">Another Paper Title (Year)</div>
-            <div class="pub-authors">Coauthor A, <strong>Your Name</strong></div>
-            <div class="pub-venue">Journal</div>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-              <a href="#">DOI</a>
-            </div>
-          </li>
-        </ol>
-
-        <p class="hint">
-          Tip: keep this list short on the homepage and link to a full publications page later if needed.
-        </p>
-      </div>
-    </section>
-
-    <section id="teaching" class="section alt">
-      <div class="container">
-        <h2>Teaching</h2>
-        <div class="card">
-          <ul class="bullets">
-            <li><strong>Course Name</strong> — Role (Term Year)</li>
-            <li><strong>Course Name</strong> — Role (Term Year)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="card">
-          <p>
-            Email is best: <a href="mailto:you@university.edu">you@university.edu</a>
-          </p>
-          <p>
-            Office: Building, Room · Address line
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Your Name · Built with GitHub Pages</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
