@@ -153,3 +153,29 @@ body {
   color: var(--muted, #666);
   font-style: italic;
 }
+
+/* --- Shared subpage layout helpers --- */
+.page-main {
+  padding: 42px 0;
+}
+
+.page-title {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.page-card {
+  /* reuse your existing "card" look */
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow, 0 10px 30px rgba(0,0,0,.35));
+  padding: 22px;
+}
+
+/* highlight current page in nav */
+.nav a.active{
+  color: var(--text);
+  border-color: var(--border);
+  background: rgba(255,255,255,.06);
+}
