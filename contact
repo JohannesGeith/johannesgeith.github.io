@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page">
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <div class="brand-name">Your Name</div>
+        <div class="brand-role">PhD Candidate</div>
+      </div>
+
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="assets/cv.pdf">CV</a>
+        <a href="index.html#teaching">Teaching</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap contact-page">
+    <h1 class="page-title">Contact</h1>
+
+    <div class="contact-card" role="list">
+      <div class="contact-row" role="listitem">
+        <div class="contact-left">
+          <span class="icon" aria-hidden="true">✉️</span>
+          <span class="label">Email</span>
+        </div>
+        <div class="contact-right">
+          <a href="mailto:you@university.edu">you@university.edu</a>
+        </div>
+      </div>
+
+      <div class="contact-row" role="listitem">
+        <div class="contact-left">
+          <span class="icon" aria-hidden="true">🐙</span>
+          <span class="label">GitHub</span>
+        </div>
+        <div class="contact-right">
+          <a href="https://github.com/yourhandle">@yourhandle</a>
+        </div>
+      </div>
+
+      <div class="contact-row" role="listitem">
+        <div class="contact-left">
+          <span class="icon" aria-hidden="true">🦋</span>
+          <span class="label">Bluesky</span>
+        </div>
+        <div class="contact-right">
+          <a href="https://bsky.app/profile/yourhandle.bsky.social">yourhandle.bsky.social</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
