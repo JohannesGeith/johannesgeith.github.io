@@ -1,39 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Publications</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Publications — Johannes Geith</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="page">
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="title">
+        <h1>Johannes Geith</h1>
+        <p class="subtitle">PhD Candidate</p>
+      </div>
 
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <div class="brand">
-      <div class="brand-name">Johannes Geith</div>
-      <div class="brand-role">PhD Candidate</div>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="index.html#research">Research</a>
+        <a class="active" href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="topnav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a class="active" href="publications.html">Publications</a>
-      <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main class="page-main">
+    <div class="container">
+      <h2 class="page-title">Publications</h2>
 
-<main class="wrap page-content">
-  <h1 class="page-title">Publications</h1>
+      <div class="page-card">
+        <p>Publications will be added here.</p>
+      </div>
+    </div>
+  </main>
 
-  <p class="placeholder">
-    A list of publications will appear here.
-  </p>
-</main>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Johannes Geith</p>
+    </div>
+  </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
