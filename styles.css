@@ -141,3 +141,15 @@ body {
 .btn:hover{
   background: rgba(255,255,255,.55);
 }
+
+/* ===== Empty page placeholders ===== */
+
+.page-content{
+  padding: 56px 0 72px;
+  max-width: 720px;
+}
+
+.placeholder{
+  color: var(--muted, #666);
+  font-style: italic;
+}
