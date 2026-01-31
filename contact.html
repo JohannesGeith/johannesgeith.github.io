@@ -3,53 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact</title>
+  <title>Contact — Johannes Geith</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="page">
 
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <div class="brand">
-        <div class="brand-name">Your Name</div>
-        <div class="brand-role">PhD Candidate</div>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="title">
+        <h1>Johannes Geith</h1>
+        <p class="subtitle">PhD Candidate</p>
       </div>
 
-      <nav class="topnav" aria-label="Primary">
+      <nav class="nav">
+        <a href="index.html">About</a>
         <a href="index.html#research">Research</a>
-        <a href="index.html#publications">Publications</a>
-        <a href="assets/cv.pdf">CV</a>
-        <a href="index.html#teaching">Teaching</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
         <a class="active" href="contact.html">Contact</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap contact-page">
-    <h1 class="page-title">Contact</h1>
+  <main class="page-main">
+    <div class="container">
+      <h2 class="page-title">Contact</h2>
 
-    <div class="contact-card" role="list">
-      <div class="contact-row" role="listitem">
-        <div class="contact-left">
-          <span class="icon" aria-hidden="true">✉️</span>
-          <span class="label">Email</span>
-        </div>
-        <div class="contact-right">
-          <a href="mailto:johannes.geith@statsvet.su.se">johannes.geith@statsvet.su.se</a>
-        </div>
-      </div>
-
-      <div class="contact-row" role="listitem">
-        <div class="contact-left">
-          <span class="icon" aria-hidden="true"></span>
-          <span class="label">LinkedIn</span>
-        </div>
-        <div class="contact-right">
-          <a href="https://www.linkedin.com/in/johannes-geith-711016a5/">johannes-geith-711016a5/</a>
-        </div>
+      <div class="page-card">
+        <p><strong>Email:</strong> <a href="mailto:you@university.edu">you@university.edu</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/JohannesGeith">@JohannesGeith</a></p>
+        <!-- add more lines later if you want -->
       </div>
     </div>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Johannes Geith</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
