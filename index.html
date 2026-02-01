@@ -1,111 +1,78 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Your Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic website of Your Name">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Johannes Geith</title>
+  <meta name="description" content="Academic website of Johannes Geith." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="site-title">
+        <h1>Johannes Geith</h1>
+        <p>PhD Candidate</p>
+      </div>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="site-title">
-      <h1>Johannes Geith</h1>
-      <p>PhD Candidate</p>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="active">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="assets/Geith%20CV_2026-Feb.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
     </div>
-    <nav class="nav">
-      <a href="#research">About</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>      
-      <a href="assets/Geith CV_2026-Feb.pdf" target="_blank" rel="noopener">CV</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="container main-grid">
-  <div class="photo">
-    <img src="assets/Johannes Geith_2023.png" alt="Portrait of Johannes Geith">
-   <div class="profile-links">
-  <a href="mailto:johannes.geith@statvet.su.se">Email</a>
-  ·
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener">
-    LinkedIn
-  </a>
-  ·
-  <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">
-    Google Scholar
-  </a>
-</div>
-  </div>
+  <main class="container main-grid">
+    <aside class="photo">
+      <img
+        src="assets/Johannes%20Geith_2023.png"
+        alt="Portrait of Johannes Geith"
+        loading="lazy"
+      />
 
-  <div class="content">
-    <p class="welcome">Welcome!</p>
+      <div class="profile-links" aria-label="Profile links">
+        <a href="mailto:johannes.geith@statvet.su.se">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">
+          Google Scholar
+        </a>
+      </div>
+    </aside>
 
-    <p>
-      I am a PhD candidate in <strong>Political Science</strong> at
-      <strong>Stockholm University</strong>. My research xxx.
-    </p>
+    <section class="content">
+      <p class="welcome">Welcome!</p>
 
-    <p>
-      My work xxx.
-    </p>
+      <p>
+        I am a PhD candidate in <strong>Political Science</strong> at
+        <strong>Stockholm University</strong>. My research xxx.
+      </p>
 
-    <p>
-      Methodologically, I xxx.
-    </p>
+      <p>My work xxx.</p>
 
-    <p>
-      I have been a visiting researcher at <em>Princeton University</em> and <em>Georgetown University</em>.
-    </p>
+      <p>Methodologically, I xxx.</p>
 
-  </div>
-</main>
+      <p>
+        I have been a visiting researcher at <em>Princeton University</em> and
+        <em>Georgetown University</em>.
+      </p>
+    </section>
+  </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <p class="footer-text">
-      © <span id="year"></span> Johannes Geith. Hosted on GitHub Pages.
-    </p>
-
-    <div class="footer-icons" aria-label="Social links">
-      <!-- Email -->
-      <a class="icon-link" href="mailto:johannes.geith@statvet.su.se" aria-label="Email">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
-          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
-        </svg>
-      </a>
-
-      <!-- LinkedIn -->
-      <a class="icon-link" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener"
-         aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
-          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 23.5h4V7.5h-4v16zM8.5 7.5h3.8v2.2h.1c.5-1 1.9-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.5v9.5h-4v-8.4c0-2-.04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.5v8.5h-4v-16z"/>
-        </svg>
-      </a>
-
-      <!-- Google Scholar (simple “cap” icon + link) -->
-      <a class="icon-link" href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener"
-         aria-label="Google Scholar">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
-          <!-- mortarboard / graduation cap (simple) -->
-          <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3z"/>
-          <path d="M5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8z"/>
-        </svg>
-      </a>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">
+        © <span id="year"></span> Johannes Geith. Hosted on GitHub Pages.
+      </p>
     </div>
-  </div>
+  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
 </body>
 </html>
