@@ -99,12 +99,8 @@ a:hover{ text-decoration: underline; }
   display: block;
 }
 
-/* Left column visual separation */
-.photo-panel{
-  background: #eeeeee; /* slightly darker than page background */
-  padding: 24px;
-  border-radius: var(--radius);
-}
+/* NOTE: removed the old left-column panel to avoid affecting photo sizing */
+/* .photo-panel { ... }  <-- intentionally not used */
 
 /* Contact block under the photo (no bullets) */
 .profile-contact{
@@ -129,6 +125,15 @@ a:hover{ text-decoration: underline; }
 
 .profile-contact a:hover{
   text-decoration: underline;
+}
+
+/* Subtle visual separation for contact block only */
+.contact-panel{
+  margin-top: 18px;
+  padding: 16px 18px;
+  background: #eeeeee;              /* slightly darker than page bg */
+  border: 1px solid var(--border);  /* thin outline */
+  border-radius: var(--radius);
 }
 
 .welcome{
