@@ -125,12 +125,11 @@ a:hover{ text-decoration: underline; }
   text-decoration: underline;
 }
 
-/* Subtle visual separation for contact block only */
 .contact-panel{
   margin-top: 18px;
   padding: 16px 18px;
-  background: #eeeeee;
-  border: 1px solid var(--border);
+  background: #e6e8ea;         
+  border: 1px solid #d2d6da;
   border-radius: var(--radius);
 }
 
