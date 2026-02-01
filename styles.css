@@ -236,3 +236,30 @@ body {
     align-items: flex-start;
   }
 }
+
+.profile-icons{
+  margin-top: 12px;
+  display: flex;
+  gap: 14px;
+}
+
+.profile-icons a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.profile-icons a:hover{
+  background: rgba(0,0,0,.04);
+}
+
+.profile-icons .icon{
+  width: 18px;
+  height: 18px;
+  fill: var(--muted);
+}
