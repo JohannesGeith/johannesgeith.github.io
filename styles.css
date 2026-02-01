@@ -195,11 +195,12 @@ a:hover{ text-decoration: underline; }
 ========================= */
 
 .footer{
-  border-top: 1px solid var(--border);
+  background: #e2e4e7;        /* darker than page bg */
+  border-top: 1px solid #d6d9dd;
   margin-top: 60px;
-  padding: 24px 0;
+  padding: 28px 0;
   font-size: 13px;
-  color: var(--muted);
+  color: #555;
 }
 
 .footer-inner{
