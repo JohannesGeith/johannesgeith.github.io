@@ -74,6 +74,10 @@ a:hover{ text-decoration: underline; }
   font-size: 15px;
 }
 
+.nav a:hover{
+  text-decoration: underline;
+}
+
 .nav a.active{
   text-decoration: underline;
 }
@@ -95,26 +99,20 @@ a:hover{ text-decoration: underline; }
   display: block;
 }
 
-/* text links under the photo */
+/* Contact block under the photo (no bullets) */
 .profile-contact{
-  margin-top: 16px;
+  margin-top: 18px;
   font-size: 15px;
 }
 
 .profile-contact h3{
-  margin: 0 0 6px;
-  font-size: 16px;
+  margin: 0 0 10px;
+  font-size: 18px;
   font-weight: normal;
 }
 
-.profile-contact ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.profile-contact li{
-  margin: 4px 0;
+.profile-contact p{
+  margin: 6px 0;
 }
 
 .profile-contact a{
