@@ -3,16 +3,16 @@
 ========================= */
 
 :root{
-  --bg: #f5f5f5;
-  --panel: #ffffff;
-  --text: #2f2f2f;
-  --muted: #6b6b6b;
-  --accent: #555;
-  --border: #e2e2e2;
+  --bg: #f7f8f9;          /* very light gray background */
+  --panel: #ffffff;      /* cards stay white */
+  --text: #2a2a2a;       /* slightly softer black */
+  --muted: #7a7a7a;      /* lighter muted text */
+  --accent: #4f4f4f;     /* links, subtle emphasis */
+  --border: #e6e8eb;     /* light gray borders */
 
   --max-width: 1100px;
   --radius: 8px;
-  --shadow: 0 10px 30px rgba(0,0,0,.10);
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
 }
 
 *{ box-sizing: border-box; }
