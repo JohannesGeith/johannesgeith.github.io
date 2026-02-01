@@ -244,3 +244,14 @@ a:hover{ text-decoration: underline; }
     align-items: flex-start;
   }
 }
+
+/* Inline academic links */
+.content a {
+  color: #111;            /* dark black */
+  text-decoration: none; /* no underline */
+}
+
+.content a:hover {
+  color: #000;            /* slightly stronger on hover */
+  text-decoration: none; /* still no underline */
+}
