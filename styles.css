@@ -99,6 +99,13 @@ a:hover{ text-decoration: underline; }
   display: block;
 }
 
+/* Left column visual separation */
+.photo-panel{
+  background: #eeeeee; /* slightly darker than page background */
+  padding: 24px;
+  border-radius: var(--radius);
+}
+
 /* Contact block under the photo (no bullets) */
 .profile-contact{
   margin-top: 18px;
