@@ -267,3 +267,11 @@ a:hover{ text-decoration: underline; }
     align-items: flex-start;
   }
 }
+
+.pub-card {
+  margin-bottom: 28px;
+}
+
+.pub-section {
+  margin-top: 0;
+}
