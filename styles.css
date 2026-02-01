@@ -3,13 +3,23 @@
 ========================= */
 
 :root{
-  --bg: #f7f8f9;          /* very light gray background */
-  --panel: #ffffff;      /* cards stay white */
-  --text: #2a2a2a;       /* slightly softer black */
-  --muted: #7a7a7a;      /* lighter muted text */
-  --accent: #4f4f4f;     /* links, subtle emphasis */
-  --border: #e6e8eb;     /* light gray borders */
+  --bg: #f7f8f9;
+  --panel: #ffffff;
+  --text: #2a2a2a;
+  --muted: #7a7a7a;
 
+  /* Theme surfaces */
+  --chrome: #e2e4e7;        /* header/footer background */
+  --chrome-border: #d6d9dd; /* header/footer border */
+  --contact-bg: #e6e8ea;    /* contact panel background */
+  --contact-border: #d2d6da;
+
+  /* Links */
+  --accent: #4f4f4f;        /* default link color */
+  --link-strong: #111;      /* in-text "academic" links */
+  --link-strong-hover: #000;
+
+  --border: #e6e8eb;
   --max-width: 1100px;
   --radius: 8px;
   --shadow: 0 8px 24px rgba(0,0,0,.08);
@@ -26,6 +36,7 @@ body{
   font-size: 16px;
 }
 
+/* Default links (nav/contact/footer etc.) */
 a{ color: var(--accent); }
 a:hover{ text-decoration: underline; }
 
@@ -44,8 +55,8 @@ a:hover{ text-decoration: underline; }
 ========================= */
 
 .site-header{
-  background: #e2e4e7;       
-  border-bottom: 1px solid #d6d9dd;
+  background: var(--chrome);
+  border-bottom: 1px solid var(--chrome-border);
 }
 
 .header-inner{
@@ -75,10 +86,7 @@ a:hover{ text-decoration: underline; }
   font-size: 15px;
 }
 
-.nav a:hover{
-  text-decoration: underline;
-}
-
+.nav a:hover,
 .nav a.active{
   text-decoration: underline;
 }
@@ -100,7 +108,7 @@ a:hover{ text-decoration: underline; }
   display: block;
 }
 
-/* Contact block under the photo (no bullets) */
+/* Contact block under the photo */
 .profile-contact{
   margin-top: 18px;
   font-size: 14px;
@@ -125,11 +133,12 @@ a:hover{ text-decoration: underline; }
   text-decoration: underline;
 }
 
+/* Contact panel */
 .contact-panel{
   margin-top: 18px;
   padding: 16px 18px;
-  background: #e6e8ea;         
-  border: 1px solid #d2d6da;
+  background: var(--contact-bg);
+  border: 1px solid var(--contact-border);
   border-radius: var(--radius);
 }
 
@@ -140,6 +149,17 @@ a:hover{ text-decoration: underline; }
 
 .content p{
   margin: 0 0 18px;
+}
+
+/* In-text academic links: dark, no underline */
+.content a{
+  color: var(--link-strong);
+  text-decoration: none;
+}
+
+.content a:hover{
+  color: var(--link-strong-hover);
+  text-decoration: none;
 }
 
 /* =========================
@@ -194,12 +214,12 @@ a:hover{ text-decoration: underline; }
 ========================= */
 
 .footer{
-  background: #e2e4e7;        /* darker than page bg */
-  border-top: 1px solid #d6d9dd;
+  background: var(--chrome);
+  border-top: 1px solid var(--chrome-border);
   margin-top: 60px;
   padding: 28px 0;
   font-size: 13px;
-  color: #555;
+  color: var(--muted);
 }
 
 .footer-inner{
@@ -243,15 +263,4 @@ a:hover{ text-decoration: underline; }
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-/* Inline academic links */
-.content a {
-  color: #111;            /* dark black */
-  text-decoration: none; /* no underline */
-}
-
-.content a:hover {
-  color: #000;            /* slightly stronger on hover */
-  text-decoration: none; /* still no underline */
 }
