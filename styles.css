@@ -1,20 +1,23 @@
-/* ---------- Base ---------- */
+/* =========================
+   Base
+========================= */
 
-:root {
+:root{
   --bg: #f5f5f5;
   --panel: #ffffff;
   --text: #2f2f2f;
   --muted: #6b6b6b;
   --accent: #555;
   --border: #e2e2e2;
+
   --max-width: 1100px;
+  --radius: 8px;
+  --shadow: 0 10px 30px rgba(0,0,0,.10);
 }
 
-* {
-  box-sizing: border-box;
-}
+*{ box-sizing: border-box; }
 
-body {
+body{
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   color: var(--text);
@@ -23,164 +26,151 @@ body {
   font-size: 17px;
 }
 
-/* ---------- Layout ---------- */
+a{ color: var(--accent); }
+a:hover{ text-decoration: underline; }
 
-.container {
+/* =========================
+   Layout
+========================= */
+
+.container{
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
 }
 
-.site-header {
+/* =========================
+   Header / Nav
+========================= */
+
+.site-header{
   background: #fafafa;
   border-bottom: 1px solid var(--border);
 }
 
-.header-inner {
+.header-inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 28px 0;
+  gap: 18px;
 }
 
-.site-title h1 {
+.site-title h1{
   margin: 0;
   font-size: 26px;
 }
 
-.site-title p {
+.site-title p{
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 15px;
 }
 
-/* ---------- Navigation ---------- */
-
-.nav a {
+.nav a{
   margin-left: 22px;
   text-decoration: none;
   color: var(--text);
   font-size: 15px;
 }
 
-.nav a:hover {
+.nav a.active{
   text-decoration: underline;
 }
 
-/* ---------- Main content ---------- */
+/* =========================
+   Main content (Home)
+========================= */
 
-.main-grid {
+.main-grid{
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 64px;
   padding: 64px 0;
 }
 
-.photo img {
+.photo img{
   width: 100%;
-  border-radius: 6px;
+  border-radius: var(--radius);
   display: block;
 }
 
-/* ---------- Text ---------- */
+/* text links under the photo */
+.profile-links{
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
 
-.welcome {
+.profile-links a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+.profile-links a:hover{
+  text-decoration: underline;
+}
+
+.welcome{
   font-style: italic;
   margin-top: 0;
 }
 
-.content p {
-  margin-bottom: 22px;
+.content p{
+  margin: 0 0 22px;
 }
 
-/* ---------- Footer ---------- */
+/* =========================
+   Subpages (Publications / Teaching / Contact)
+========================= */
 
-.footer {
-  border-top: 1px solid var(--border);
-  padding: 24px 0 40px;
-  font-size: 15px;
+.page-main{
+  padding: 42px 0 72px;
 }
 
-.footer a {
-  color: var(--accent);
+.page-title{
+  margin: 0 0 14px;
+  font-size: 22px;
 }
 
-/* ---------- Responsive ---------- */
-
-@media (max-width: 900px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .nav a {
-    margin-left: 0;
-    margin-right: 18px;
-  }
-
-  .main-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .photo {
-    max-width: 300px;
-  }
+.page-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
 }
+
+.placeholder{
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+}
+
+/* =========================
+   Buttons (optional)
+========================= */
 
 .btn{
   display: inline-block;
   padding: 10px 14px;
   border: 1px solid rgba(0,0,0,.18);
-  border-radius: 8px;
+  border-radius: var(--radius);
   text-decoration: none;
   color: inherit;
   background: rgba(255,255,255,.35);
 }
+
 .btn:hover{
   background: rgba(255,255,255,.55);
+  text-decoration: none;
 }
 
-/* ===== Empty page placeholders ===== */
+/* =========================
+   Footer
+========================= */
 
-.page-content{
-  padding: 56px 0 72px;
-  max-width: 720px;
-}
-
-.placeholder{
-  color: var(--muted, #666);
-  font-style: italic;
-}
-
-/* --- Shared subpage layout helpers --- */
-.page-main {
-  padding: 42px 0;
-}
-
-.page-title {
-  margin: 0 0 14px;
-  font-size: 22px;
-}
-
-.page-card {
-  /* reuse your existing "card" look */
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow, 0 10px 30px rgba(0,0,0,.35));
-  padding: 22px;
-}
-
-/* highlight current page in nav */
-.nav a.active{
-  color: var(--text);
-  border-color: var(--border);
-  background: rgba(255,255,255,.06);
-}
-
-.footer {
+.footer{
   border-top: 1px solid var(--border);
   margin-top: 60px;
   padding: 24px 0;
@@ -188,7 +178,6 @@ body {
   color: var(--muted);
 }
 
-/* Footer layout: text teaches left, icons on right */
 .footer-inner{
   display: flex;
   align-items: center;
@@ -200,66 +189,34 @@ body {
   margin: 0;
 }
 
-/* Icon row */
-.footer-icons{
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-}
+/* =========================
+   Responsive
+========================= */
 
-.icon-link{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  text-decoration: none;
-  background: rgba(255,255,255,.04);
-}
+@media (max-width: 900px){
+  .header-inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
 
-.icon-link:hover{
-  background: rgba(255,255,255,.08);
-}
+  .nav a{
+    margin-left: 0;
+    margin-right: 18px;
+  }
 
-.icon{
-  width: 18px;
-  height: 18px;
-  fill: var(--muted);
-}
+  .main-grid{
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 42px 0;
+  }
 
-/* Mobile: stack nicely */
-@media (max-width: 700px){
+  .photo{
+    max-width: 320px;
+  }
+
   .footer-inner{
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-.profile-icons{
-  margin-top: 12px;
-  display: flex;
-  gap: 14px;
-}
-
-.profile-icons a{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  text-decoration: none;
-}
-
-.profile-icons a:hover{
-  background: rgba(0,0,0,.04);
-}
-
-.profile-icons .icon{
-  width: 18px;
-  height: 18px;
-  fill: var(--muted);
 }
