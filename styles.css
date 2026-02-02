@@ -17,7 +17,7 @@
   /* Links */
   --accent: #4f4f4f;        /* default link color */
   --link-strong: #111;      /* in-text "academic" links */
-  --link-strong-hover: #000;
+  --link-hover: #1a73e8;
 
   --border: #e6e8eb;
   --max-width: 1100px;
@@ -181,14 +181,17 @@ a:hover{ text-decoration: underline; }
   margin: 0 0 18px;
 }
 
-/* In-text academic links: dark, no underline */
-.content a{
-  color: var(--link-strong);
+/* Main-page links: neutral by default, blue on hover */
+.content a,
+.profile-contact a {
+  color: var(--text);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.content a:hover{
-  color: var(--link-strong-hover);
+.content a:hover,
+.profile-contact a:hover {
+  color: var(--link-hover);
   text-decoration: none;
 }
 
