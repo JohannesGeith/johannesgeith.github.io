@@ -27,6 +27,11 @@
 
 *{ box-sizing: border-box; }
 
+/* ✅ Sticky footer foundation */
+html, body{
+  height: 100%;
+}
+
 body{
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -34,6 +39,16 @@ body{
   background: var(--bg);
   line-height: 1.65;
   font-size: 16px;
+
+  /* ✅ make footer stick to bottom */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ main grows to fill remaining space */
+main{
+  flex: 1;
 }
 
 /* Default links (nav/contact/footer etc.) */
@@ -214,9 +229,12 @@ a:hover{ text-decoration: underline; }
 ========================= */
 
 .footer {
-  background: #e2e4e7;        /* darker grey */
-  border-top: 1px solid #d6d9dd;
-  margin-top: 60px;
+  background: var(--chrome);
+  border-top: 1px solid var(--chrome-border);
+
+  /* ✅ remove margin-top so footer can “stick” properly */
+  margin-top: 0;
+
   padding: 28px 0;
   font-size: 13px;
   color: #555;
