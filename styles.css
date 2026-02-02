@@ -94,16 +94,31 @@ a:hover{ text-decoration: underline; }
   font-size: 15px;
 }
 
-.nav a{
+.nav a {
   margin-left: 22px;
+  padding-bottom: 4px;
   text-decoration: none;
   color: var(--text);
   font-size: 15px;
+  border-bottom: 2px solid transparent;
 }
 
-.nav a:hover,
-.nav a.active{
-  text-decoration: underline;
+.nav a:hover {
+  border-bottom-color: var(--muted);
+}
+
+.nav a.active {
+  border-bottom-color: var(--text);
+  font-weight: 500;
+}
+
+.site-name a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-name a:hover {
+  opacity: 0.85;
 }
 
 /* =========================
